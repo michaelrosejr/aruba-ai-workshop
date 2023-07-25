@@ -8,6 +8,7 @@ authors = ["Michael Rose Jr. <michael.rose@hpe.com>"]
 python = "^3.10"
 jupyter-server = "<2.0.0"
 jupyterlab = "3.6+"
+scikit-learn = "^1.3.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
