@@ -1,0 +1,1 @@
+docker build -t aruba-ai-workshop:tf-dev --no-cache .
