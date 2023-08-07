@@ -104,6 +104,7 @@ py==1.11.0; python_version >= "3.5" and python_full_version < "3.0.0" or python_
 pyasn1-modules==0.3.0; python_version >= "3.8" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" and python_version >= "3.8"
 pyasn1==0.5.0; python_version >= "3.8" and python_full_version < "3.0.0" and python_version < "4" and (python_version >= "3.8" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" and python_version >= "3.8") or python_full_version >= "3.6.0" and python_version >= "3.8" and python_version < "4" and (python_version >= "3.8" and python_full_version < "3.0.0" or python_full_version >= "3.6.0" and python_version >= "3.8")
 pycparser==2.21; python_version >= "3.8" and python_full_version < "3.0.0" and implementation_name == "pypy" or implementation_name == "pypy" and python_version >= "3.8" and python_full_version >= "3.4.0"
+pydotplus==2.0.2
 pygments==2.15.1; python_version >= "3.9"
 pyparsing==3.0.9; python_full_version >= "3.6.8" and python_version >= "3.8"
 pytest==5.4.3; python_version >= "3.5"
