@@ -5,13 +5,16 @@ description = ""
 authors = ["Michael Rose Jr. <michael.rose@hpe.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.12"
 jupyter-server = "<2.0.0"
 jupyterlab = "3.6+"
 scikit-learn = "^1.3.0"
 pandas = "^2.0.3"
-numpy = "^1.25.1"
+numpy = "1.23.5"
 matplotlib = "^3.7.2"
+tensorflow = ">=2.12.0"
+nbstripout = "^0.6.1"
+pre-commit = "^3.3.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
