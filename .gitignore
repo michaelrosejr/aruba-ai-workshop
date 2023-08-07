@@ -1,4 +1,12 @@
+models/imageclassifier.h5
 images/iris.png
+logs/*
+*.ipynb_checkpoints
+.ipython
+.jupyter
+.local
+.npm
+
 .DS_Store
 .huskyrc.json
 Old/*

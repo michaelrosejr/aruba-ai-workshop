@@ -10,4 +10,8 @@ RUN pip install scikit-learn
 
 EXPOSE 8888
 
+# Needed to suppress warnings with tensorflow and GPU
+ENV TF_CPP_MIN_LOG_LEVEL=2 
+
+
 ENTRYPOINT ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.allow_origin=*", "--NotebookApp.allow_remote_access=1"]
