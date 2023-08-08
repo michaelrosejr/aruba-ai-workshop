@@ -14,7 +14,7 @@ repos:
       - id: poetry-requirements
         always_run: true
         args: [-o, requirements.txt, --dev, --without-hashes]
-  - repo: https://github.com/kynan/nbstripout
-    rev: 0.3.9
-    hooks:
-      - id: nbstripout
+#   - repo: https://github.com/kynan/nbstripout
+#     rev: 0.3.9
+#     hooks:
+#       - id: nbstripout
