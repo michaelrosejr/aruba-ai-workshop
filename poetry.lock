@@ -859,6 +859,18 @@ openapi = ["openapi-core (>=0.16.1,<0.17.0)", "ruamel-yaml"]
 test = ["hatch", "ipykernel", "jupyterlab-server", "openapi-spec-validator (>=0.5.1,<0.7.0)", "pytest-console-scripts", "pytest-cov", "pytest-jupyter[server] (>=0.6.2)", "pytest-timeout", "pytest (>=7.0)", "requests-mock", "sphinxcontrib-spelling", "strict-rfc3339", "werkzeug"]
 
 [[package]]
+name = "jupyterlab-spellchecker"
+version = "0.7.3"
+description = "A spell checker for JupyterLab."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+babel = "*"
+jupyterlab = ">=3.0,<4.0"
+
+[[package]]
 name = "keras"
 version = "2.13.1"
 description = "Deep learning for humans."
@@ -2006,9 +2018,7 @@ test = ["mypy", "pre-commit", "pytest", "pytest-asyncio", "websockets (>=10.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10,<3.12"
-content-hash = "3137053593ac857cd7d7d4c8f14bf056ae0975f24c86e4348490b2a49a734b69"
-
-
+content-hash = "6174d34c0d0af664f0deaa88a4f0e2fedd6e3f52a68d527b496c7c261ec74984"
 
 [metadata.files]
 absl-py = []
@@ -2144,6 +2154,7 @@ jupyter-ydoc = []
 jupyterlab = []
 jupyterlab-pygments = []
 jupyterlab-server = []
+jupyterlab-spellchecker = []
 keras = []
 kiwisolver = []
 libclang = []
