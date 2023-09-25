@@ -11,6 +11,7 @@ RUN chmod +x start-labs.sh
 RUN pip install -r requirements.txt
 RUN pip install scikit-learn
 RUN pip install opencv-python
+RUN pip jupyterlab-spellchecker
 
 EXPOSE 8888
 
