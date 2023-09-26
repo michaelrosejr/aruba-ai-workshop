@@ -1,7 +1,10 @@
-FROM python:3.10
+FROM python:3.10.13
 
 USER 0
-RUN apt-get update && apt-get install -y graphviz ffmpeg libsm6 libxext6
+RUN apt-get update
+RUN apt-get install -y graphviz
+RUN apt-get install -y ffmpeg 
+RUN apt-get install -y libsm6 libxext6
 RUN mkdir -p /usr/src/app/jupyter
 WORKDIR /usr/src/app
 
@@ -9,9 +12,9 @@ COPY requirements.txt requirements.txt
 COPY entrypoint/start-labs.sh .
 RUN chmod +x start-labs.sh
 RUN pip install -r requirements.txt
-RUN pip install scikit-learn
-RUN pip install opencv-python
-RUN pip jupyterlab-spellchecker
+# RUN pip install scikit-learn
+# RUN pip install opencv-python
+# RUN pip jupyterlab-spellchecker
 
 EXPOSE 8888
 

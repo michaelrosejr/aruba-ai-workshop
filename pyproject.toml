@@ -17,6 +17,7 @@ nbstripout = "^0.6.1"
 pre-commit = "^3.3.3"
 pydotplus = "^2.0.2"
 jupyterlab-spellchecker = "0.7.3"
+opencv-python = "^4.8.0"
 
 
 [tool.poetry.dev-dependencies]
