@@ -13,7 +13,6 @@ conda activate workshop
 NB_PASS=$(echo ${SOME_ID} | python3.10 -c 'from jupyter_server.auth import passwd;print(passwd(input()))')
 
 XLA_FLAGS=--xla_gpu_cuda_data_dir=/root/miniconda/envs/workshop
-CUDA_VISIBLE_DEVICES=1
 
 set -euo pipefail
 
