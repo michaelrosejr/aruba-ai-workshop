@@ -10,5 +10,7 @@ printf "[Done]\n"
 
 printf "Building docker iamge:\t\t"
 TAG=`date +"%Y-%m-%d_%H%M%S"`
-docker build -t aruba-ai-workshop:$TAG --no-cache .
+#docker build -t aruba-ai-workshop:$TAG --no-cache .
+# docker build -t aruba-ai-workshop:$TAG -t aruba-ai-workshop:latest .
+docker build -t aruba-ai-workshop:$TAG -t aruba-ai-workshop:latest --no-cache .
 printf "[Done]\n"

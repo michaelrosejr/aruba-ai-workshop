@@ -1,0 +1,21 @@
+name: workshop
+channels:
+  - conda-forge
+  - nvidia
+  - anaconda
+  - defaults
+dependencies:
+  - mesa-libgl-cos6-x86_64
+  - cudatoolkit=11.8.0
+  - cuda-nvcc
+  - graphviz
+  - ffmpeg
+  - ncurses
+  - numpy
+  - pandas
+  - scikit-learn
+  - pip
+  - pip:
+    - nvidia-cudnn-cu11
+    - tensorflow==2.13.*
+    - -r file:requirements.txt
