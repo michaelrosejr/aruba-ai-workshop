@@ -1,12 +1,12 @@
 #!/bin/bash
-rm models/imageclassifier.keras
-rm ~/.jupyter/migrated
+echo "Removing lab specific files."
+rm -rf models/imageclassifier.keras
 rm -rf .ipynb_checkpoints/
 rm -rf .vscode
 rm -rf logs
 rm -rf ~/.jupyter/lab/workspaces
 
-
+echo "Clearing Outputs for all cells and all Jupyter Notebooks."
 jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace Activity00.ipynb
 jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace Activity01.ipynb
 jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace Activity02.ipynb
