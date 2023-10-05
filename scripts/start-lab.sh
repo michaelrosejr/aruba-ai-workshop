@@ -1,5 +1,13 @@
+# Set password for Jupyter Lab
 scripts/gen_jupyter_auth.py -p $1
 # NB_PASS=$(echo $1 | python -c 'from jupyter_server.auth import passwd;print(passwd(input()))')
+
+INSTANCE_ID=`curl http://169.254.169.254/latest/meta-data/instance-id`
+LABID=$2
+LABNUMBER=$3
+
+JSON_FMT='{"InstanceId": "%s", "LABID": "%s", "LAB_Number": "%s"}'
+printf "$JSON_FMT" "$INSTANCEID" "$LABID" "$LABNUMBER"> ~/health_check/html/index.json
 
 export XLA_FLAGS=--xla_gpu_cuda_data_dir=/home/ubuntu/miniconda3/envs/workshop
 #export CUDA_VISIBLE_DEVICES=1
