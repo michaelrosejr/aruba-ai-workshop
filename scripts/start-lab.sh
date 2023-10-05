@@ -5,9 +5,10 @@ scripts/gen_jupyter_auth.py -p $1
 INSTANCE_ID=`curl http://169.254.169.254/latest/meta-data/instance-id`
 LABID=$2
 LABNUMBER=$3
+Node_Name=$4
 
-JSON_FMT='{"InstanceId": "%s", "LABID": "%s", "LAB_Number": "%s"}'
-printf "$JSON_FMT" "$INSTANCEID" "$LABID" "$LABNUMBER"> ~/health_check/html/index.json
+JSON_FMT='{"instance_id": "%s", "lab_id": "%s", "lab_number": "%s", "node_name": "%s"}'
+printf "$JSON_FMT" "$INSTANCE_ID" "$LABID" "$LABNUMBER" "$Node_Name"> ~/health_check/html/index.json
 
 export XLA_FLAGS=--xla_gpu_cuda_data_dir=/home/ubuntu/miniconda3/envs/workshop
 #export CUDA_VISIBLE_DEVICES=1
