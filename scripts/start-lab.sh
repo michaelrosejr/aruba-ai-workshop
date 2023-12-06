@@ -1,5 +1,5 @@
 # Set password for Jupyter Lab
-scripts/gen_jupyter_auth.py -p $1
+/home/ubuntu/labs/LAB10/aruba-ai-workshop/scripts/gen_jupyter_auth.py -p $1
 # NB_PASS=$(echo $1 | python -c 'from jupyter_server.auth import passwd;print(passwd(input()))')
 
 INSTANCE_ID=`curl http://169.254.169.254/latest/meta-data/instance-id`
